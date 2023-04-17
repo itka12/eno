@@ -1,4 +1,3 @@
-#ball
 x = 100 #ball's x position
 y = 100
 xdir = 0 #ball’s direction
@@ -49,8 +48,8 @@ def draw():
     #drawing ball
     fill(ballColor)
     ellipse(x, y, diam, diam)
-    x = x + xdir
-    y += ydir
+    x = x - xdir
+    y -= ydir
     
     #drawing brick
     fill(0xff3BB28D)
@@ -83,19 +82,28 @@ def draw():
         
         #if ball is out text "game over"
         textSize(50)
+        GameOverColor = color(0xFFFF1008)
         fill(GameOverColor)
         text("Game over", 400, 350)
         textSize(10)
-        text("if u wanna try again press the mouse", 480, 370)
+        tryAgain = color(0xFF000000)
+        fill(tryAgain)
+        text("if u wanna try again press the mouse", 440, 370)
         noLoop()
-
+        
+    #Score
+    score = 0
+    scoreColor = color(0xFFFFFFFF)
+    fill(scoreColor)
+    textSize(20)
+    text("score:", 50, 100)
          
     #brick and ball collision with a pad
     if y  < bHeight + diam/2:
         if bricks[x // bWidth]:
             ydir *= -1
             bricks[x // bWidth] = False
-            
+            score += 1
     #draw racket
     fill(padColor)
     padX = mouseX - padWidth/2
