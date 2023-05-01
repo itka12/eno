@@ -1,6 +1,6 @@
 #head x, y
-x = 250
-y = 250
+x = 0
+y = 0
 #colors 
 head = color(36, 99, 255)
 face = color(255)
@@ -19,62 +19,75 @@ def draw():
     doraemonHead_LeeMidEum(x, y, head, face, mount, nose, innerEyes, innerEyes1)
     
 def doraemonHead_LeeMidEum(x, y, head, face, mount, nose, innerEyes, innerEyes1):
-    
+    '''
+    draws doraemon face image
+    parameters: 
+        x(int) : left top x
+        y(int) : left top y
+        head : color in hexa-decimal(ex. 0xff00ff00 or color() data type)
+        face : color in hexa-decimal(ex. 0xff00ff00 or color() data type)
+        mount : color in hexa-decimal(ex. 0xff00ff00 or color() data type)
+        nose : color in hexa-decimal(ex. 0xff00ff00 or color() data type)
+        innerEyes : color in hexa-decimal(ex. 0xff00ff00 or color() data type)
+        innerEyes1 : color in hexa-decimal(ex. 0xff00ff00 or color() data type)
+    returns :
+         none
+    '''
     # head 
     fill(head)
-    ellipse(x, y, 400, 400)
+    ellipse(x + 250, y + 250, 400, 400)
     
     #faceWhite
     fill(face)
-    ellipse(255, 300, 285, 280)
+    ellipse( X + 255, y +  300, 285, 280)
     
     #mount
     fill(mount)
     noFill()
-    arc(255, 310, 200, 180, 0, PI, OPEN)
+    arc(x + 255, y + 310, 200, 180, 0, PI, OPEN)
     
     #eyesRight
     fill(eyes)
-    ellipse(305, 180, 100, 150)
+    ellipse(x + 305, y + 180, 100, 150)
     
     #eyesLeft
     fill(eyes)
-    ellipse(205, 180, 100, 150)
+    ellipse(x + 205, y + 180, 100, 150)
     
     #nose
     fill(nose)
-    circle(255, 230, 50)
+    circle(x + 255, y + 230, 50)
     
     #NoseMountline
-    line(255, 255, 255, 400)
+    line(x + 255, y + 255, 255, 400)
     
     #innerEyesLeft
     fill(innerEyes)
-    ellipse(230, 190, 20, 30)
+    ellipse(x + 230, y + 190, 20, 30)
     fill(innerEyes1)
-    ellipse(232, 192, 9, 9)
+    ellipse(x + 232, y + 192, 9, 9)
     
     #innerEyesRight
     fill(innerEyes)
-    ellipse(280, 190, 20, 30)
+    ellipse(x + 280, y + 190, 20, 30)
     fill(innerEyes1)
-    ellipse(280, 190, 9, 9)
+    ellipse(x + 280, y + 190, 9, 9)
     
     #LeftmMustage
     stroke(0);
-    line(60, 260, 185, 270)
+    line(x + 60, y + 260, x + 185, y + 270)
     stroke(0);
-    line(60, 280, 185, 280)
+    line(x  + 60, y + 280, x + 185, y + 280)
     stroke(0);
-    line(60, 300, 185, 290)
+    line(x + 60, y + 300, x + 185, y + 290)
     
     #RightMustage
     stroke(0);
-    line(315, 270, 440, 260)
+    line(x + 315, y + 270, x + 440, y + 260)
     stroke(0);
-    line(315, 280, 440, 280)
+    line(x + 315, y + 280, x + 440, y + 280)
     stroke(0);
-    line(315, 290, 440, 300)
+    line(x + 315, y + 290, x + 440, y + 300)
 
 
     
