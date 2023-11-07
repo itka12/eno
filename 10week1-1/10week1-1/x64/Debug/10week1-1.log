@@ -1,0 +1,11 @@
+﻿  HTMLWriter.cpp
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(11,5): error C2535: 'HTMLWriter::HTMLWriter(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(7,5): message : 'HTMLWriter::HTMLWriter' 선언을 참조하십시오.
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(12,6): error C2535: 'HTMLWriter::~HTMLWriter(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(9,6): message : 'HTMLWriter::~HTMLWriter' 선언을 참조하십시오.
+  pgpg.cpp
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(11,5): error C2535: 'HTMLWriter::HTMLWriter(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(7,5): message : 'HTMLWriter::HTMLWriter' 선언을 참조하십시오.
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(12,6): error C2535: 'HTMLWriter::~HTMLWriter(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Users\ssu21\OneDrive\바탕 화면\dlaledma\10week1-1\10week1-1\HTMLWriter.h(9,6): message : 'HTMLWriter::~HTMLWriter' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
